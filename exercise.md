@@ -25,6 +25,10 @@
 
 ```gnuplot {cmd=true output="html"}
 set terminal svg
+set grid
+set xrange [0:7]
+set yrange [-20:15]
+plot 2*x**2*sprt(x) - 5*x**2 t "f1(x)"
 
 ```
 
@@ -43,6 +47,7 @@ set terminal svg
 
 ```gnuplot {cmd=true, output="html"}
 set terminal svg
+set grid
 set xdata time
 set timefmt '%Y/%m/%d'
 set xtics format "%m/%d"
